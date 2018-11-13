@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="page">
+		<div class="modalswrap">
+			<div id="BookModal" class="modal">
+			  <div class="modal-content">
+			    <span class="close close1"><i class="fa fa-times"></i></span>
+			    <span class="poptitle">Booking</span>
+				    <form id="form" class="popup-form" method="post">
+							<input type="hidden" name="formData" value="BOoking request">
+					    <fieldset>
+					      <input class="required" placeholder="Name *" type="text" name="name" tabindex="1" required autofocus>
+					    </fieldset>
+					    <fieldset>
+					      <input placeholder="Telephone *" type="tel" tabindex="2" name="phone" required>
+					    </fieldset>
+					    <fieldset>
+					    	<input placeholder="Date *" data-toggle="datepicker" required>
+					    </fieldset>
+					    <fieldset style="margin-top: 45px;">
+					      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+					    </fieldset>
+					  </form>
+			  </div>
+			  </div>
+			<div id="MsgModal" class="modal">
+		  <div class="modal-content">
+		    <span class="close close2"><i class="fa fa-times"></i></span>
+			    <ul class="comment-section">
+						<li class="comment user-comment">
+              <div class="info">
+                <a href="#">Anie Silverston</a>
+                <span>4 hours ago</span>
+              </div>
+              <a class="avatar" href="#">
+                <img src="img/images/avatar_user_1.jpg" width="35" alt="Profile Avatar" title="Anie Silverston" />
+              </a>
+              <p>Suspendisse gravida sem?</p>
+						</li>
+						<li class="comment author-comment">
+              <div class="info">
+                <a href="#">Jack Smith</a>
+                <span>3 hours ago</span>
+              </div>
+              <a class="avatar" href="#">
+                <img src="img/images/avatar_author.jpg" width="35" alt="Profile Avatar" title="Jack Smith" />
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida sem sit amet molestie portitor.</p>
+						</li>
+						<li class="comment user-comment">
+              <div class="info">
+                <a href="#">Bradley Jones</a>
+                <span>1 hour ago</span>
+              </div>
+              <a class="avatar" href="#">
+                <img src="img/images/avatar_user_2.jpg" width="35" alt="Profile Avatar" title="Bradley Jones" />
+              </a>
+              <p>Suspendisse gravida sem sit amet molestie portitor?</p>
+						</li>
+            <li class="comment author-comment">
+              <div class="info">
+                  <a href="#">Jack Smith</a>
+                  <span>1 hour ago</span>
+              </div>
+              <a class="avatar" href="#">
+                  <img src="img/images/avatar_author.jpg" width="35" alt="Profile Avatar" title="Jack Smith" />
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisee gravida sem sit amet molestie porttitor.</p>
+            </li>
+            <li class="comment user-comment">
+              <div class="info">
+                  <a href="#">Anie Silverston</a>
+                  <span>4 hours ago</span>
+              </div>
+              <a class="avatar" href="#">
+                  <img src="img/images/avatar_user_1.jpg" width="35" alt="Profile Avatar" title="Anie Silverston" />
+              </a>
+              <p>Suspendisse gravida sem?</p>
+						</li>
+						<li class="comment author-comment">
+	            <div class="info">
+	              <a href="#">Jack Smith</a>
+	              <span>3 hours ago</span>
+	            </div>
+	            <a class="avatar" href="#">
+	              <img src="img/images/avatar_author.jpg" width="35" alt="Profile Avatar" title="Jack Smith" />
+	            </a>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida sem sit amet molestie portitor.</p>
+						</li>
+						<li class="comment user-comment">
+              <div class="info">
+                <a href="#">Anie Silverston</a>
+                <span>4 hours ago</span>
+              </div>
+              <a class="avatar" href="#">
+                <img src="img/images/avatar_user_1.jpg" width="35" alt="Profile Avatar" title="Anie Silverston" />
+              </a>
+              <p>Suspendisse gravida sem?</p>
+						</li>
+						<li class="comment user-comment">
+              <div class="info">
+                <a href="#">Anie Silverston</a>
+                <span>4 hours ago</span>
+              </div>
+              <a class="avatar" href="#">
+                <img src="img/images/avatar_user_1.jpg" width="35" alt="Profile Avatar" title="Anie Silverston" />
+              </a>
+              <p>Suspendisse gravida sem?</p>
+						</li>
+						<li class="comment author-comment">
+	            <div class="info">
+	              <a href="#">Jack Smith</a>
+	              <span>3 hours ago</span>
+	            </div>
+	            <a class="avatar" href="#">
+	              <img src="img/images/avatar_author.jpg" width="35" alt="Profile Avatar" title="Jack Smith" />
+	            </a>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida sem sit amet molestie portitor.</p>
+						</li>
+            <li class="write-new">
+	            <form action="">
+                <textarea placeholder="Write your comment here" name="comment"></textarea>
+                <div>
+                  <img src="img/images/avatar_user_2.jpg" width="35" alt="Profile of Bradley Jones" title="Bradley Jones" />
+                  <button type="submit">Submit</button>
+                </div>
+	            </form>
+            </li>
+					</ul>
+		  </div>
+				</div>		
+		</div>
+		<div class="header">
+			<div id="nav-container">
+				<div id="nav-overlay"></div>
+				<div id="nav-fullscreen">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<a id="nav-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+			<div class="bgimage" style="background-image: url('img/im1.jpg');">
+				<div class="head-info">
+					<div class="titleblock">
+						<span class="h1">The North Pole 2015</span>
+						<span class="h2">THE ULTIMATE ARCTIC ADVENTURE</span>
+					</div>
+					<button class="btn bookbtn">
+					  <svg width="277" height="62">
+					    <defs>
+					        <linearGradient id="grad1">
+					            <stop offset="0%" stop-color="#E178ED"/>
+					            <stop offset="100%" stop-color="#FF8282" />
+					        </linearGradient>
+					    </defs>
+					     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+					  </svg>
+					    <span>booking request</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="days">
+				<div class="waywrap">
+					<svg width="100%" height="100%" viewBox="0 -72 100 800" preserveAspectRatio="none">
+						<!-- <path d="M50 -60 Q 50 -40, 70 -20 T 74 7 Q 35 18, 30 53 Q 24 78, 42 90 T 65 116 Q 86 180, 55 240 C 39 270, 12 260, 5 225 S 48 185, 55 230 Q 60 260, 77 315 Q 83 338, 62 350 T 30 380 T 62 430 T 64 481 T 32 538 T 57 629" stroke="rgba(250,250,250,0.3)" fill="transparent"/> -->
+
+						<path class="vec0 animated" d="M50 -60 Q 50 -40, 70 -20 T 74 7" stroke="rgba(250,250,250,0.3)" fill="transparent"/>
+						<path class="vec1 animated" d="M74 7 Q 35 18, 30 53" stroke="rgba(250,250,250,0.3)" fill="transparent"/>
+						<path class="vec2 animated" d="M30 53 Q 24 78, 42 90 T 65 116" stroke="rgba(250,250,250,0.3)" fill="transparent"/>
+						<path class="vec3 animated" d="M65 116 Q 86 180, 55 240 C 39 270, 12 260, 5 225" stroke="rgba(250,250,250,0.3)" fill="transparent"/>
+						<path class="vec4 animated" d="M5 225 C 0 190, 48 185, 55 230 Q 60 260, 77 315" stroke="rgba(250,250,250,0.3)" fill="transparent"/>
+						<path class="vec5 animated" d="M77 315 Q 83 338, 62 350 T 30 380" stroke="rgba(250,250,250,0.3)" fill="transparent"/>
+						<path class="vec6 animated" d="M30 380 Q 21 400 62 430 Q 105 460 64 481" stroke="rgba(250,250,250,0.3)" fill="transparent"/>
+						<path class="vec7 animated" d="M64 481 Q 24 500 32 538" stroke="rgba(250,250,250,0.3)" fill="transparent"/>
+						<path class="vec8 animated" d="M32 538 Q 60 600 57 629" stroke="rgba(250,250,250,0.3)" fill="transparent"/>
+
+						<circle cx="50" cy="-65" r="6" fill="#fd961d"/>
+						<path d="M45 -63 L 55 -63 L 50 -55 Z" stroke="#fd961d" fill="#fd961d"/>
+						<circle cx="50" cy="-65" r="2.4" fill="white"/>
+
+						<circle class="vec0 animated" cx="74" cy="7" r="2" fill="white"/>
+						<circle class="vec1 animated" cx="30" cy="53" r="2" fill="white"/>
+						<circle class="vec2 animated" cx="65" cy="116" r="2" fill="white"/>
+						<circle class="vec3 animated" cx="5" cy="225" r="2" fill="white"/>
+						<circle class="vec4 animated" cx="77" cy="315" r="2" fill="white"/>
+						<circle class="vec5 animated" cx="30" cy="380" r="2" fill="white"/>
+						<circle class="vec6 animated" cx="64" cy="481" r="2" fill="white"/>
+						<circle class="vec7 animated" cx="32" cy="538" r="2" fill="white"/>
+						<circle class="vec8 animated" cx="57" cy="629" r="2" fill="white"/>
+					</svg>
+				</div>
+				<div class="daywrap animated" style="transform:translateX(20px);">
+					<div class="day">
+						<div class="title">
+							<span>day 1:</span>
+							<span>Helsinki, Finland</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+						<div class="comments">
+							<button class="combtn"><span class="comnumber">19</span>Comments</button>
+						</div>
+					</div>
+				</div>				
+				<div class="daywrap animated">
+					<div class="day">
+						<div class="title">
+							<span>day 2:</span>
+							<span>Embakation Day in Murmansk</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quaerat, obcaecati doloribus quos minima nulla rem excepturi repudiandae ad odio, provident, adipisci voluptate, magni saepe placeat?</p>
+						<div class="comments">
+							<button class="combtn"><span class="comnumber">36</span>Comments</button>
+						</div>
+					</div>
+				</div>				
+				<div class="daywrap animated" style="transform:translateX(10px);">
+					<div class="day">
+						<div class="title">
+							<span>day 3-6:</span>
+							<span>Helsinki, Finland</span>
+						</div>
+						<div class="pwrap">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas provident ipsam tenetur repellendus tempore asperiores id at iusto dolorum ipsa, ea odit facilis, numquam aliquam ab iste enim maiores? Eaque.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint officia debitis placeat repellat ipsum non porro possimus deleniti sapiente nihil, eum itaque magni amet obcaecati tempora in a explicabo cum ipsam quibusdam enim impedit quisquam laudantium eaque!</p>
+						</div>
+						<div class="comments">
+							<button class="combtn"><span class="comnumber">5</span>Comments</button>
+						</div>
+					</div>
+				</div>				
+				<div class="daywrap animated" style="transform:translateX(-42px);">
+					<div class="day">
+						<div class="title">
+							<span>day 7:</span>
+							<span>90° North</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum minus unde, eligendi delectus adipisci quaerat, recusandae voluptas quasi rem ea sint, quam consequuntur! Minus corporis numquam libero ullam soluta. Tempora harum a deleniti! Voluptas laborum recusandae iusto, perferendis ipsa deleniti obcaecati mollitia vero. Explicabo minus soluta odit odio facere libero alias ipsa quisquam, mollitia nobis blanditiis.</p>
+						<div class="comments">
+							<button class="combtn"><span class="comnumber">238</span>Comments</button>
+						</div>
+					</div>
+				</div>				
+				<div class="daywrap animated" style="transform:translateX(30px);">
+					<div class="day">
+						<div class="title">
+							<span>day 8:</span>
+							<span>Southbound in the Arctic Ocean</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium voluptas, consectetur nobis. Eum dignissimos excepturi velit expedita pariatur animi qui sit consequatur consectetur.</p>
+						<div class="comments">
+							<button class="combtn"><span class="comnumber">2</span>Comments</button>
+						</div>
+					</div>
+				</div>				
+				<div class="daywrap animated">
+					<div class="day">
+						<div class="title">
+							<span>day 9-10:</span>
+							<span>Franz Josef Land</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam laudantium modi amet mollitia blanditiis provident atque nihil eaque enim possimus sit, temporibus quibusdam fugiat, consequuntur facilis non hic corporis ullam quaerat obcaecati distinctio. Hic nulla, sunt vel porro molestias ea? Doloribus animi ipsam aliquam nulla maiores, sunt esse quisquam dolore eaque doloremque similique iusto ducimus vero natus, aliquid dolores assumenda quasi debitis numquam fugiat, atque.</p>
+						<div class="comments">
+							<button class="combtn"><span class="comnumber">12</span>Comments</button>
+						</div>
+					</div>
+				</div>				
+				<div class="daywrap animated">
+					<div class="day">
+						<div class="title">
+							<span>day 11-12:</span>
+							<span>At Sea</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci harum corporis odit laborum voluptas!</p>
+						<div class="comments">
+							<button class="combtn"><span class="comnumber">50</span>Comments</button>
+						</div>
+					</div>
+				</div>				
+				<div class="daywrap animated" style="transform:translateX(13px);">
+					<div class="day">
+						<div class="title">
+							<span>day 13:</span>
+							<span>Disembarkation Day in Murmansk</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis assumenda eligendi, cum veniam. Eum quaerat modi fuga explicabo facilis similique eius ea ratione consequatur tempore itaque praesentium quibusdam ullam nam placeat, quasi ipsa alias est recusandae autem maiores blanditiis officia, ducimus! Illum, ex dolores repellendus aliquid quaerat, nulla asperiores. Deserunt.</p>
+						<div class="comments">
+							<button class="combtn"><span class="comnumber">4</span>Comments</button>
+						</div>
+					</div>
+				</div>				
+				<div class="daywrap animated" style="transform:translateX(-18px);">
+					<div class="day">
+						<div class="title">
+							<span>day 14:</span>
+							<span>Helsinki, Finland</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum velit numquam, nulla aliquam necessitatibus sunt, commodi fuga dignissimos aperiam possimus?</p>
+						<div class="comments">
+							<button class="combtn"><span class="comnumber">9</span>Comments</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img class="img-responsive" src="img/imfoot.png" alt="">
+		</div>
+		<div class="footer">
+			<div class="text-center">
+				<button class="btn bookbtn">
+				  <svg width="277" height="62">
+				     <rect x="5" y="5" rx="25" fill="none" stroke="#3a3e3f" width="266" height="50"></rect>
+				  </svg>
+				    <span>booking request</span>
+				</button>
+				<ul class="trip-stat">
+					<li>
+						<span class="count">90</span>
+						<span>latitude</span>
+					</li>					
+					<li>
+						<span class="count">14</span>
+						<span>days</span>
+					</li>					
+					<li>
+						<span class="count">6400</span>
+						<span>miles</span>
+					</li>
+				</ul>
+			<p class="moreinfo"><strong>Lorem ipsum dolor:</strong> sit amet, consectetur adipisicing elit. Doloremque totam harum assumenda debitis pariatur possimus odit, tempore similique molestias error. Excepturi quas obcaecati nisi aliquam delectus optio neque, a placeat sequi, recusandae quod corrupti totam itaque vel. Quisquam magni consequatur sapiente, doloribus sunt nisi voluptate accusantium deserunt laboriosam tenetur natus reprehenderit numquam inventore voluptatum quo a blanditiis et.</p>
+			<div id="social-test">
+				<ul class="social">
+				  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				  <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+				  <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+				  <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
