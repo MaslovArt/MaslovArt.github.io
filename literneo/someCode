@@ -1,0 +1,57 @@
+/*
+Theme Name: Literneo
+Theme URI: http://oleum.esy.es/
+Author: Tmaslov
+Author URI: telega/tmaslov
+Description: Literneo responsive theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+//ajax post filtering
+add_action( 'wp_ajax_nopriv_load-filter', 'prefix_load_cat_posts' );
+add_action( 'wp_ajax_load-filter', 'prefix_load_cat_posts' );
+function prefix_load_cat_posts () {
+    $cat_id = $_POST[ 'cat' ];
+         $args = array (
+        'cat' => $cat_id,
+        'posts_per_page' => 9,
+        'order' => 'DESC'
+
+    );
+    global $post;
+    $posts = get_posts( $args );
+
+    ob_start (); ?>
+
+    <div class="container-a4">
+        <ul class="caption-style-4">
+    <?php foreach ( $posts as $post ) {
+        setup_postdata( $post ); ?>
+        <a id="post-<?php the_ID(); ?>" class="lsquare" href="<?php the_permalink(); ?>">
+            <li>
+                <div class="bgimg1" style="background-image: url(<?php the_post_thumbnail_url(); ?>);"></div>
+                <div class="caption">
+                    <div class="blur"></div>
+                    <div class="caption-text">
+                        <h3><?php the_title(); ?></h3>
+                    </div>
+                </div>
+            </li>
+        </a>
+   <?php } wp_reset_postdata(); ?>
+        </ul>
+   </div>
+   <?php $response = ob_get_contents();
+   ob_end_clean();
+
+   echo $response;
+   die(1);
+}
+
+<?php $i = 0; if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php endwhile; endif; ?>   
